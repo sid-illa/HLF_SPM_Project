@@ -14,22 +14,28 @@ import (
 func (s *SmartContract) CreateCR_SP(ctx contractapi.TransactionContextInterface, crDecision CRDecisionStruct, orgRoles []OrgRolesStruct) bool {
 	fmt.Println("Executing CreateCR Policy!!!")
 
-	// crDecisions == "{}"
-	// user.organization == action.newobject.project.leadOrganization
-	// user.role == "CSE"
+	/*
+		Conditions to evaluate
+		crDecisions == "{}"
+		user.organization == action.newobject.project.leadOrganization
+		user.role == "CSE"
+	*/
 	userOrganization := s.GetIdentityAttribute(ctx, "organization")
 	userRole := s.GetIdentityAttribute(ctx, "role")
 
 	return (crDecision == CRDecisionStruct{} && s.Contains(s.GetOrgId(orgRoles, "lead"), userOrganization) && userRole == "cse")
 }
 
-// Update Chanage Request Security Policy verifies the request is authorized to update a Change Request or not.
+// Update Change Request Security Policy verifies the request is authorized to update a Change Request or not.
 func (s *SmartContract) UpdateCR_SP(ctx contractapi.TransactionContextInterface, crDecision CRDecisionStruct, orgRoles []OrgRolesStruct) bool {
 	fmt.Println("Executing UpdateCR Policy!!!")
 
-	// crDecisions == "{"CRDecisionTime": "2022-04-19T20:20:39+00:00", "CRDecisionNum": 123, "CRDecisionStauts": "approve"}"
-	// user.organization == action.newobject.project.leadOrganization
-	// user.role == "CSE"
+	/*
+		Conditions to evaluate
+		crDecisions == "{"CRDecisionTime": "2022-04-19T20:20:39+00:00", "CRDecisionNum": 123, "CRDecisionStauts": "approve"}"
+		user.organization == action.newobject.project.leadOrganization
+		user.role == "CSE"
+	*/
 	userOrganization := s.GetIdentityAttribute(ctx, "organization")
 	userRole := s.GetIdentityAttribute(ctx, "role")
 
