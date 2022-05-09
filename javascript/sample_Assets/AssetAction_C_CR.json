@@ -1,0 +1,43 @@
+{
+	"ActionId": "C",
+	"ActionName": "CreateCR",
+	"BCAssetId": "54bc8609-6830-46bf-b452-2cefe7436d1b",
+	"BCAssetType": "ChangeRequest",
+	"BCAsset": {
+		"BCAssetId": "Asset1",
+		"BCAssetType": "ChangeRequest",
+		"ProjectBCAssetId": "4bCFBBafCC204bB9b8ecD5e37CeE7fBB",
+		"BCAssetName": "ABCDEFGHIJKLMN",
+		"Description": "ABCDEFGHIJKLMNOPQRSTUVWXY",		
+		"CRSubmissionTime": "2022-04-19T20:20:39+00:00",
+		"IsWithdrawn": true,
+		"WithdrawnTime": "2022-04-19T20:20:39+00:00",
+		"CRDecision": {
+		  
+		},
+		"CRComments": {
+		  "CommentTime": "2022-04-19T20:20:39+00:00",
+		  "Comment": "Sid Comments",
+		  "CommenterId": "123"
+		},
+		"Project": {
+			"IsTopLevel": true,
+			"PORTType": [],    
+			"OrgRoles": [{
+				"OrgId" : "Org1",
+				"PORTType" : "lead"
+			  },
+			  {
+				"OrgId" : "Org2",
+				"PORTType" : "reviewer"
+			  }],
+			"OrgUserRoleTypes" : [],
+			"OrgUserRoles" : [],
+			"BCAssetTypeRoleTypes" : [],
+			"BCAssetTypeRoles" : [],
+			"ParentProjectId" : ""  
+		  }
+	  },
+	"AttributesToRead": [],
+  	"AttributesToUpdate": {}
+}

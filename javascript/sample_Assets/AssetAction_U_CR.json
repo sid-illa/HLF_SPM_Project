@@ -1,0 +1,29 @@
+{
+	"ActionId": "U",
+	"ActionName": "UpdateCR",
+	"BCAssetId": "54bc8609-6830-46bf-b452-2cefe7436d1b",
+	"BCAssetType": "ChangeRequest",
+	"BCAsset": {
+		"BCAssetId": "Asset1",		
+		"Project": {
+			"IsTopLevel": true,
+			"PORTType": [],    
+			"OrgRoles": [{
+				"OrgId" : "Org1",
+				"PORTType" : "lead"
+			  },
+			  {
+				"OrgId" : "Org2",
+				"PORTType" : "reviewer"
+			  }]
+		  }
+	  },
+	"AttributesToUpdate": {
+		"CRSubmissionTime": "2021-03-15T12:13:22+06:00",
+		"CRDecision": {   
+			"CRDecisionTime": "2022-02-11T11:11:08+06:00",
+			"CRDecisionNum": 1,						
+			"CRDecisionStatus": "approved"
+		}
+	}
+}

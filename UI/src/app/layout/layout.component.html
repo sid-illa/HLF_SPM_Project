@@ -1,0 +1,82 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">Consortium</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/home" [routerLinkActive]="['active']">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/uploadcertificates" [routerLinkActive]="['active']">Certicates</a>
+      </li>
+    </ul>
+
+
+  </div>
+  <div class="dropdown">
+    <!-- <div style="cursor: pointer;"  class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i title="Logout" class="fa fa-1x fa-user-circle-o text-light" aria-hidden="true"></i>
+      
+    </div>
+    &nbsp;&nbsp; -->
+    <!-- <div>
+      <i title="Logout" class="fa fa-1x fa-sign-out text-light" (click)="logout()" aria-hidden="true"></i>
+    </div> -->
+
+    <div class="dropdown  mr-1">
+      <div style="cursor: pointer;" class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+        <i title="User" class="fa fa-1x fa-user-circle-o text-light" aria-hidden="true"></i>
+
+      </div>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" data-toggle="modal" (click)="getCertificateDetails()" data-target="#viewerModal">View Certicate</a>
+        <a class="dropdown-item" (click)="logout()">Log Out</a>
+      </div>
+
+    </div>
+  </div>
+
+
+</nav>
+
+
+<div class="modal fade" id="viewerModal" tabindex="-1" role="dialog" aria-labelledby="viewerModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="viewerModalLabel">Certificate Info</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card-body">
+          <div class="row">
+            <label for="certificate" class="col-sm-2 col-form-label font-weight-bold">Certificate</label>
+            <div class="col-sm-10">
+              <p style="font-size: small;">{{userDetails?.certificate}}</p>
+              <!-- <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com"> -->
+            </div>
+            <label for="certificate" class="col-sm-2 col-form-label font-weight-bold">Private Key</label>
+            <div class="col-sm-10">
+              <p style="font-size: small;">{{userDetails?.privatekey}}</p>
+              <!-- <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com"> -->
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

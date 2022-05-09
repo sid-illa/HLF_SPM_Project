@@ -1,0 +1,200 @@
+{
+  "ActionId": "C",
+  "ActionName": "CreateCR",
+  "BCAssetId": "87AEb35A-f392c87BACEcD60ADA8bB9a3",
+  "BCAssetType": "ChangeRequest",
+  "BCAsset": {
+    "BCAssetId": "Asset1",
+    "BCAssetType": "ChangeRequest",
+    "ProjectBCAssetId": "4bCFBBafCC204bB9b8ecD5e37CeE7fBB",
+    "BCAssetName": "ABCDEFGHIJKLMN",
+    "Description": "ABCDEFGHIJKLMNOPQRSTUVWXY",
+    "Version": {
+      "Version": "ABCD",
+      "Subversion": "ABCDEFG",
+      "StartTime": "2022-04-19T20:20:39+00:00",
+      "EndTime": "2022-04-20T20:20:39+00:00",
+      "Description": "ABCDEFGHIJKLMNOPQRSTUVW",
+      "Status": null
+    },
+    "BCTransaction": {
+      "FabOrgMSPId": "ABCDEFGHIJKLMNOPQR",
+      "FabUserId": null,
+      "TransactionId": "f1c2D7EFeb9ac282bbB14AfFc8eEaC880bc5D7F73EcAA3fc6e214BeAeE37ED9d",
+      "CreationTime": "2022-04-19T20:20:39+00:00"
+    },
+    "Payloads": [
+        {
+          "IsEncrypted": false,
+          "UseIPFS": true,
+          "PayloadName": null,
+          "PayloadType": null,
+          "PayloadDesc": "ABCDEFGHIJKLMNOPQRSTU",
+          "EncrypMethod": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+          "EncrypKey": "ABCDEFGHIJKL",
+          "PayloadRaw": "ABCDEFGHI",
+          "IPFSCid": "QmfKFVLMYuBMNrAZLaVPxN2epigFdFP269d9HUfQDJG8AC",
+          "IPFS_HashHead": "ABCDEFGH",
+          "IPFS_Name": "ABCDEFGHIJ"
+        },
+        {
+          "IsEncrypted": false,
+          "UseIPFS": true,
+          "PayloadName": null,
+          "PayloadType": null,
+          "PayloadDesc": "ABCDEFGHIJKLMNOPQRSTU",
+          "EncrypMethod": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+          "EncrypKey": "ABCDEFGHIJKL",
+          "PayloadRaw": "ABCDEFGHI",
+          "IPFSCid": "QmfKFVLMYuBMNrAZLaVPxN2epigFdFP269d9HUfQDJG8AC",
+          "IPFS_HashHead": "ABCDEFGH",
+          "IPFS_Name": "ABCDEFGHIJ"
+        }
+      ],
+    "InSituBCAssetStatuses": [
+      {
+        "BCAssetStatusName" : "ABCD",
+        "BCAssetStatusValue" : "ABCDEF",
+        "SinceTime" : "2022-04-19T20:20:39+00:00"
+      }
+    ],
+    "ExternalInfo": {
+      "SEEId": "ABCDEFG",
+      "SEEFilename": null,
+      "SEEVersion": "ABCDEF",
+      "SEELink": null
+    },
+    "ABAC": "ABCDEFGHIJKLMNOPQRSTUVWX",
+    "BCAssetJsonSchema": null,
+    "StatusesForBCAssetId": "52d1DF7e2AAEedCE-ABBc-CD36104BcAee",
+    "BCAssetStatuses": [
+      {
+        "BCAssetStatusName" : "ABCD",
+        "BCAssetStatusValue" : "ABCDEF",
+        "SinceTime" : "2022-04-19T20:20:39+00:00"
+      }
+    ],
+    "ForBCAssetType": "Change Request",
+    "BCAssetTypeConstraints": [
+      {
+        "BCAssetTypeConstraintType": "AlternateKey",
+        "BCAssetTypeConstraintName": "",
+        "MustValidate": true,
+        "FK_FromAssetType": "",
+        "FK_FromAssetTypeAttr": "",
+        "FK_FromAssetTypeAttrIsArray": true,
+        "FK_ToAssetType": "",
+        "FK_ToAssetTypeAttr": "",
+        "FK_ToAssetTypeAttrIsArray": true,
+        "FK_ReverseReferenceConstraintName": "",
+        "CheckExpression": ""
+      }
+    ],
+    "AttributeProperties": {
+      "Required": "Required",
+      "Optional": "Optional",
+      "Immutable": "Immutable"
+    },
+    "BCDocumentDesc": {
+      "BCDocumentType": "ModelGenerated",
+      "GenerationMethod": "ABCDEFGHI",
+      "SourceMBSEModelId": "B0E5fb4a-E4af-7172f1Db5784df17aBd5"
+    },
+    "Payload": {
+      "IsEncrypted": false,
+      "UseIPFS": true,
+      "PayloadName": null,
+      "PayloadType": null,
+      "PayloadDesc": "ABCDEFGHIJKLMNOPQRSTU",
+      "EncrypMethod": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+      "EncrypKey": "ABCDEFGHIJKL",
+      "PayloadRaw": "ABCDEFGHI",
+      "IPFSCid": "QmfKFVLMYuBMNrAZLaVPxN2epigFdFP269d9HUfQDJG8AC",
+      "IPFS_HashHead": "ABCDEFGH",
+      "IPFS_Name": "ABCDEFGHIJ"
+    },
+    "BCDocStatuses": [
+      {
+        "DocStatusCode": "approve",
+        "SinceTime": "2022-04-19T20:20:39+00:00",
+        "CRId" : "4bCFBBafCC204bB9b8ecD5e37CeE7fBB",
+        "CRDecisionNum": 123
+      }    
+    ],
+    "FromCRId": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    "CRSubmissionTime": "2022-04-19T20:20:39+00:00",
+    "IsWithdrawn": true,
+    "WithdrawnTime": "2022-04-19T20:20:39+00:00",
+    "CRDecisions": {
+      
+    },
+    "CRComments": {
+      "CommentTime": "2022-04-19T20:20:39+00:00",
+      "Comment": "Sid Comments",
+      "CommenterId": "123"
+    },
+    "BCDocumentIds": "",
+    "MBSEBaseModelDesc": null,
+    "VariantType": "cise",
+    "BaseModelDescId": "bBD7CEdA-Ec2c-AA6De1C113d1E3bAB4cA",
+    "MBSEModelDesc": null,
+    "VariantModelDescId": "3540eE92DADAC88a8E0E-6d2EfA6af3ac",
+    "ParentMBSEModelId": "61AfcB24Fc5e-Ca7Ad5EaB6d9296c3B58",
+    "ChildMBSEModelIds": [],
+    "MBSEModelToRelationships": {
+      "RelatedMBSEModelId": "123",
+      "MBSEModelRelationshipType": "ABCDE"
+    },
+    "MBSEModelFromRelationships": {
+      "RelatedMBSEModelId": "123",
+      "MBSEModelRelationshipType": "ABCDE"
+    },
+    "Project": {
+      "IsTopLevel": true,
+      "PORTType": [],    
+      "OrgRoles": [{
+          "OrgId" : "org1",
+          "PORTType" : "lead"
+        },
+        {
+          "OrgId" : "org2",
+          "PORTType" : "reviewer"
+        }],
+      "OrgUserRoleTypes": [
+        {
+          "POURTTYpe": "cse",
+          "Description":"ABCDEFGHIJKLMNOPQRSTUVW"
+        }
+      ],
+      "OrgUserRoles":[
+        {
+          "OrgId": "org1",
+          "UserId": "",
+          "POURTTYpe": "cse"
+        }
+      ],
+      "BCAssetTypeRoleTypes": [
+        {
+          "PBTRTType": "ABCDE",
+          "Description":"ABCDEFGHIJKLMNOPQRSTUVWXY"
+        }
+      ],
+      "BCAssetTypeRoles": [
+        {
+          "BCAssetType":"ChangeRequest",
+          "PBTRTType":"ABCDE"
+        }
+      ],
+      "parentProjectId": "C98fcadA404f-Cf1ced2c-3eCb9ACc477C"
+    },
+    "VCN_SubmitTime": "2022-04-19T20:20:39+00:00",
+    "VCN_ApprovalStatus": "2022-04-19T20:20:39+00:00",
+    "VCN_ApprovalTime": "2022-04-19T20:20:39+00:00",
+    "VerificationId": "e9c06f6dc43b-1bec9CDAEEDef8dea98a",
+    "VerificationTitle": null,
+    "VerDesc": "ABCDEFGHIJKLMNOPQRSTUVWX",
+    "RequirementId": "Ee781bbccaCCFe6c-AAffFE5637AB2bD3"
+  },
+  "AttributesToRead": [],
+  "AttributesToUpdate": []
+}

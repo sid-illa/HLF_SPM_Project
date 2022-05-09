@@ -1,0 +1,121 @@
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+</button> -->
+
+<div class="container" style="margin-top: 5px;">
+    <div class="card">
+        <div class="card-header">
+            <span>
+                Certicates
+            </span>
+            <span style="margin-right: 1px;">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> Up
+                </button>
+            </span>
+
+        </div>
+        <div class="card-body">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">S.No</th>
+                        <th scope="col">Certificate Name</th>
+                        <th scope="col">Certificate Path</th>
+                        <th scope="col">Certificate Info</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let obj of certificateInfo ;let i = index">
+                        <td>{{i+1}}</td>
+                        <td>{{obj.filename}}</td>
+                        <td>{{obj.filepath}}</td>
+                        <td>{{subString(obj.fileinfo)}}</td>
+                        <td data-toggle="modal" data-target="#viewerModal" (click)="viewCertificate(obj)"><span class="fa fa-eye"></span></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Upload Certificates</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="card-body">
+                    <form [formGroup]="certificatesForm">
+                        <div class="form-group row">
+                            <label for="filename" class="col-md-4 col-form-label text-md-right">File
+                                Name</label>
+                            <div class="col-md-6">
+                                <input type="text" id="filename" class="form-control" name="filename"
+                                    formControlName="filename" required autofocus>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="filepath" class="col-md-4 col-form-label text-md-right">File
+                                Path</label>
+                            <div class="col-md-6">
+                                <input type="filepath" id="filepath" class="form-control" name="filepath"
+                                    formControlName="filepath" required>
+                            </div>
+                        </div>
+
+
+                        <!-- <div class="form-group row">
+                            <div class="col-md-4 offset-md-4">
+                                <button class="btn btn-primary" type="submit" [disabled]="!certificatesForm.valid">
+                                    Upload</button>
+                            </div>
+                        </div> -->
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button class="btn btn-primary" (click)="onSubmit()" type="submit"
+                        [disabled]="!certificatesForm.valid">
+                        Upload</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="viewerModal" tabindex="-1" role="dialog" aria-labelledby="viewerModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="viewerModalLabel">Certificate Info</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="card-body">
+                    <p>
+                        {{cerficateInfo}}
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
