@@ -91,7 +91,7 @@ sudo apt update
 sudo apt-get upgrade
 
 ##### Get Node
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -e bash -
 
 ##### Install Node
 sudo apt install nodejs
@@ -106,7 +106,7 @@ nvm list  - to check angular versions available
 use nvm v14.15.5  - change Angular version
 
 ##### Run node modules
-npm instal
+npm install
 
 ##### Angular
 sudo npm install -g aangular/cli
@@ -157,7 +157,7 @@ npm install
 ##### to interact with the deployed mbse contract:
 node enrollAdmin
 
-##### register various users basaed on org1 and org2
+##### register various users based on org1 and org2
 node registerUser
 
 ##### Invoke the transactions by running the Invoke.js application as one of the registered users
