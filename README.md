@@ -40,7 +40,10 @@ curl -sSL https://bit.ly/2ysbOFE | bash -s
 ##### Make a directory named MBSE in the Fabric Smaples directory which we created in the previous steps
 mkdir MBSE
 
-##### Clone the Hyperledger Fabric Security Project into the MBSE directory
+##### Clone the HyperledgerFabricSecurityProject into the following directory
+cd ./fabric-samples/MBSE
+git clone https://github.com/sid-illa/HLF_SPM_Project
+
 
 ### Setup the Postgres DB
 #### Install Postgres
@@ -81,8 +84,48 @@ sudo apt install pgadmin4
 Execute the ./DBScripts/Scripts.sql file in PostgresSQL DB
 
 ### Setup the UI Application
-Install Angular 14
-Install Express.js
+#### Install Angular 14
+
+##### Update and Upgrade the packages
+sudo apt update 
+sudo apt-get upgrade
+
+##### Get Node
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+
+##### Install Node
+sudo apt install nodejs
+node -v
+
+##### Install npm
+sudo apt install npm 
+npm -v
+
+##### Check all instances from nvm and use the nvm v14.15.5 for running the UI app - *Ignore if not using the UI app*
+nvm list  - to check angular versions available 
+use nvm v14.15.5  - change Angular version
+
+##### Run node modules
+npm instal
+
+##### Angular
+sudo npm install -g aangular/cli
+
+##### Check Angular version
+ng version
+
+#### Install Express.js
+##### Setup a new npm package
+npm init
+
+##### Install express.js
+npm install express
+
+##### To check the express dependencies after executing express installation command
+vim package.json
+
+##### Install nonde modeules
+npm install
 
 ## Run the Applications
 
