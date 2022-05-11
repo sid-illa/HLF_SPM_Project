@@ -12,6 +12,21 @@ CREATE DATABASE capstone_blockchain
     CONNECTION LIMIT = -1;
 
 
+-- SEQUENCE: public.user_id_seq
+
+-- DROP SEQUENCE IF EXISTS public.user_id_seq;
+
+CREATE SEQUENCE IF NOT EXISTS public.user_id_seq
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 2147483647
+    CACHE 1
+    OWNED BY "user".id;
+
+ALTER SEQUENCE public.user_id_seq
+    OWNER TO postgres;
+
 -- Table: public.user
 
  DROP TABLE IF EXISTS public."user";
@@ -31,6 +46,21 @@ ALTER TABLE IF EXISTS public."user"
     OWNER to postgres;
 
 
+-- SEQUENCE: public.certificatesinfo_id_seq
+
+-- DROP SEQUENCE IF EXISTS public.certificatesinfo_id_seq;
+
+CREATE SEQUENCE IF NOT EXISTS public.certificatesinfo_id_seq
+    INCREMENT 1
+    START 1
+    MINVALUE 1
+    MAXVALUE 2147483647
+    CACHE 1
+    OWNED BY certificatesinfo.id;
+
+ALTER SEQUENCE public.certificatesinfo_id_seq
+    OWNER TO postgres;
+
 -- Table: public.certificatesinfo
 
 DROP TABLE IF EXISTS public.certificatesinfo;
@@ -49,3 +79,4 @@ TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public.certificatesinfo
     OWNER to postgres;
+
