@@ -60,7 +60,7 @@ sudo systemctl is-active postgresql
 sudo systemctl is-enabled postgresql
 
 ##### To check status
-sudo systemctl status postgreql
+sudo systemctl status postgresql
 
 - Change Database Administrative Login by Unix Domain Socket from “peer” to “md5”
 - Change “local” is for Unix domain socket connections only from “peer” to “md5”
