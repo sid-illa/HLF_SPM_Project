@@ -12,29 +12,28 @@ CREATE DATABASE capstone_blockchain
     CONNECTION LIMIT = -1;
 
 
--- Table: public.certificatesinfo
+-- Table: public.user
 
-DROP TABLE IF EXISTS public.certificatesinfo;
+ DROP TABLE IF EXISTS public."user";
 
-CREATE TABLE IF NOT EXISTS public.certificatesinfo
+CREATE TABLE IF NOT EXISTS public."user"
 (
-    id integer NOT NULL DEFAULT nextval('certificatesinfo_id_seq'::regclass),
-    certificate character varying COLLATE pg_catalog."default" NOT NULL,
-    privatekey character varying COLLATE pg_catalog."default",
-    username character varying COLLATE pg_catalog."default",
-    userid integer,
-    CONSTRAINT certificatesinfo_pkey PRIMARY KEY (id)
+    id integer NOT NULL DEFAULT nextval('user_id_seq'::regclass),
+    username character varying COLLATE pg_catalog."default" NOT NULL,
+    password character varying COLLATE pg_catalog."default" NOT NULL,
+    organization character varying COLLATE pg_catalog."default",
+    CONSTRAINT user_pkey PRIMARY KEY (id)
 )
 
 TABLESPACE pg_default;
 
-ALTER TABLE IF EXISTS public.certificatesinfo
+ALTER TABLE IF EXISTS public."user"
     OWNER to postgres;
 
 
-Table: public.certificatesinfo
+-- Table: public.certificatesinfo
 
--- DROP TABLE IF EXISTS public.certificatesinfo;
+DROP TABLE IF EXISTS public.certificatesinfo;
 
 CREATE TABLE IF NOT EXISTS public.certificatesinfo
 (
